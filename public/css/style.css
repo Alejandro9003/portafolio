@@ -1,0 +1,23 @@
+/*Se Importa fuente de google fonts Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+/* Se establecen los estilos principales*/
+:root{
+    --body-font: "Poppins";
+}
+body{
+    font-family: var(--body-font);
+}
+.container__menu{
+    display: flex;
+    justify-content: space-between;
+}
+.items__menu{
+    display: flex;
+    justify-content: space-between;
+}
+.item{
+    list-style:none;
+    margin-right: 20px;
+}
+
