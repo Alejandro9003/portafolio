@@ -1,23 +1,30 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;1,100;1,200&family=Montserrat:ital,wght@0,100;0,400;1,400;1,700&family=Roboto+Condensed:ital,wght@1,300&display=swap');
+/*Se Importa fuente de google fonts Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
 
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+/* Se establecen los estilos principales*/
+:root{
+    --body-font: "Poppins";
+}
+body{
+    font-family: var(--body-font);
+}
+.container__menu{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.items__menu{
+    display: flex;
+    justify-content: space-between;
+}
+.item{
+    list-style:none;
+    margin-right: 20px;
+}
+.header{
+    width: 100vw;
+    height: 100vw;
+    background-color: cornflowerblue;
+    color: black;
 }
 
-body {
-    font-family: 'Montserrat', sans-serif;
-}
-
-.wrapper {
-  width: 100vw; 
-  height: 100vw;
-  background-color: darkslategray;
-  color:aliceblue;
-}
-
-.main{
-    color: blanchedalmond
-}
