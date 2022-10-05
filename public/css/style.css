@@ -11,6 +11,8 @@ body{
 .container__menu{
     display: flex;
     justify-content: space-between;
+    padding: 2em;
+    
     
 }
 .items__menu{
@@ -24,7 +26,16 @@ body{
 .header{
     width: 100vw;
     height: 100vw;
-    background-color: cornflowerblue;
+    background-color:teal;
+    color: aliceblue;
    
 }
 
+.line span {
+    color:black;
+}
+
+.items__menu  .item:hover {
+  background-color:aliceblue ;
+  color:black
+}
