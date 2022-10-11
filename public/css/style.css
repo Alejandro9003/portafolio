@@ -1,12 +1,19 @@
 /*Se Importa fuente de google fonts Poppins */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
 
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
 /* Se establecen los estilos principales*/
 :root{
     --body-font: "Poppins";
+    --body-font-size: 1.5rem;
 }
 body{
     font-family: var(--body-font);
+    font-size: var(--body-font-size);
 }
 .container__menu{
     display: flex;
