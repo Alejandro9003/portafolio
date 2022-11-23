@@ -96,12 +96,16 @@ span{
     z-index: 1;
 }
 
+.about_text{
+    grid-column: 5/10;
+}
 .about {
     display: grid;
     grid-template-columns: repeat(10,2fr);
     width:100vw;
     align-items:center;
 }
+
 
 .about img{
     width: 100%;
