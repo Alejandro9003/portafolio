@@ -1,140 +1,136 @@
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="public/css/normalize.css" />
-    <link rel="stylesheet" type="text/css" href="public/css/style.css" />
-    
-  </head>
-  <body class="body">
-      <header class="header">
-      <nav>
-        <div class="container__menu">
-          <div class="line">
-            <h2>ALMOAB</h2>
-          </div>
-          <div>
-            <ul class="items__menu">
-              <li class="item"> <a href="" class="active link">Home</a> </li>
-              <li class="item"> <a href="#about" class="link">About</a> </li>
-              <li class="item"> <a href= " link">Skills</a> </li>
-              <li class="item"> <a href="#portafolio" class="link">Portafolio</a>  </li>
-            </ul>
-          </div>
-        </div>
-        <main class="main">
-          <div class="info-content">
-            <h1>Hi! <br>
-            I´m Alejandro Montoya Abadia Prueba</h1>
-               <br>
-          <h2>software developer<span>&#160;</span></h2>
-               <br>
-                  <br>
-                     <br>
-                       <br>
-                          <br>
-                            <br>
-                              <br>
-             <a download href="#">
-             <button class="download-cv">Download CV</button>
-            </a>
-          </div>
-           <img src="./img/foto.png" alt="foto alejandro">
-          
-          </main>
-          
-                     
-      </nav>
-    </header>
-      <div class="about" id="about" data-aos="fade-down">
-      <img src="./img/logo.jpg" alt="logo desarrollo">    
-      <div class="about-info"  data-aos="fade-down" >
-        <h2>About me</h2>
-        <div class="divider" data-aos="fade-down"></div>
-        <br><br><br><br><br>         
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="public/css/normalize.css" />
+  <link rel="stylesheet" type="text/css" href="public/css/style.css" />
+
+</head>
+
+<body class="body">
+  <header class="header">
+    <h1>ALMOAB</h1>
+    <nav id="container_menu">
+      <h1>ALMOAB</h1>
+      <button class="button_close" onclick={showNav()}><img src="/public/img/close_icon.svg" alt="Close"></button>
+      <div class="container_links">
+        <a href="" class="link">Home</a>
+        <a href="#about" class="link">About</a>
+        <a href=" link" class="link">Skills</a>
+        <a href="#portfolio" class="link">Portfolio</a>
+      </div>
+    </nav>
+    <button class="button_open" onclick={showNav()}><img src="/public/img/hamburguer_icon.svg" alt=""></button>
+  </header>
+  <!-- <main class="main">
+    <div class="info-content">
+      <h1>Hi! 
+        I´m Alejandro Montoya Abadia Prueba</h1>
+      
+      <h2>software developer<span>&#160;</span></h2>
+      
+      <a download href="#">
+        <button class="download-cv">Download CV</button>
+      </a>
+    </div>
+    <img src="./img/foto.png" alt="foto alejandro">
+
+  </main>
+
+
+
+
+  <div class="about" id="about" data-aos="fade-down">
+    <img src="./img/logo.jpg" alt="logo desarrollo">
+    <div class="about-info" data-aos="fade-down">
+      <h2>About me</h2>
+      <div class="divider" data-aos="fade-down"></div>
+      <br><br><br><br><br>
       <p>good software developer works with discipline and perseverance from day one</p>
-      <p>Passwords are like underwear. You cannot let anyone see it, you must change it regularly and you must not share it with strangers</p>
-         <button class="download-cv">Read more</button>
-      </div>
-      </div>
+      <p>Passwords are like underwear. You cannot let anyone see it, you must change it regularly and you must not share
+        it with strangers</p>
+      <button class="download-cv">Read more</button>
+    </div>
+  </div>
 
-      <div class="portafolio" id="portafolio"  data-aos="fade-down" >
-        <div class="portafolio-headings" data-aos="fade-right">
-          <h2>My Portfolio</h2>
-          <div class="divider" data-aos="fade-down"></div>
+  <div class="portafolio" id="portafolio" data-aos="fade-down">
+    <div class="portafolio-headings" data-aos="fade-right">
+      <h2>My Portfolio</h2>
+      <div class="divider" data-aos="fade-down"></div>
+    </div>
+    <div class="container" data-aos="fade-down">
+      <div class="card" data-aos="fade-down">
+        <div class="card_img" data-aos="fade-down">
         </div>
-        <div class="container" data-aos="fade-down">
-          <div class="card" data-aos="fade-down">
-            <div class="card_img" data-aos="fade-down">
-              </div>
-              <div class="card_title">
-                <h2>View Project</h2>
-              </div>
-              <div class="projects-links" >
-                <a href="https://github.com/Alejandro9003/portafolio"target="_blank">
-                  <i class="fa-brands fa-github"></i>
-                </a>
-                <a href="">
-                  <i class="fa-sharp fa-solid fa-globe"></i>
-                </a>
-                <a href="">
-                  <i class="fa-solid fa-code"></i>
-                </a>
-              </div>
-              <div class="proyect-details-content">
-              <button class="project-details download-cv">
-                <a href="">
-                  Project details
-                </a>
-               </button>
-          </div>
+        <div class="card_title">
+          <h2>View Project</h2>
         </div>
-        <div class="card" data-aos="fade-down">
-          <div class="card_img" data-aos="fade-down">
-            </div>
-            <div class="card_title">
-              <h2>View Project</h2>
-            </div>
-            <div class="projects-links">
-              <a href=""target="_blank">
-                <i class="fa-brands fa-github"></i>
-              </a>
-              <a href="">
-                <i class="fa-sharp fa-solid fa-globe"></i>
-              </a>
-              <a href="">
-                <i class="fa-solid fa-code"></i>
-              </a>
-            </div>
-            <div class="proyect-details-content">
-            <button class="project-details download-cv" >
-              <a href="">
-                Project details
-              </a>
-             </button>
-             
+        <div class="projects-links">
+          <a href="https://github.com/Alejandro9003/portafolio" target="_blank">
+            <i class="fa-brands fa-github"></i>
+          </a>
+          <a href="">
+            <i class="fa-sharp fa-solid fa-globe"></i>
+          </a>
+          <a href="">
+            <i class="fa-solid fa-code"></i>
+          </a>
+        </div>
+        <div class="proyect-details-content">
+          <button class="project-details download-cv">
+            <a href="">
+              Project details
+            </a>
+          </button>
+        </div>
+      </div>
+      <div class="card" data-aos="fade-down">
+        <div class="card_img" data-aos="fade-down">
+        </div>
+        <div class="card_title">
+          <h2>View Project</h2>
+        </div>
+        <div class="projects-links">
+          <a href="" target="_blank">
+            <i class="fa-brands fa-github"></i>
+          </a>
+          <a href="">
+            <i class="fa-sharp fa-solid fa-globe"></i>
+          </a>
+          <a href="">
+            <i class="fa-solid fa-code"></i>
+          </a>
+        </div>
+        <div class="proyect-details-content">
+          <button class="project-details download-cv">
+            <a href="">
+              Project details
+            </a>
+          </button>
+
         </div>
       </div>
     </div>
-      <div class="contact-section"data-aos="fade-right">
-        <div class="contact-headings">
-          <h2>Keep in touch</h2>
-        </div>
-        <div class="container-contac"></div>
-      </div>  
-      <script src="https://kit.fontawesome.com/7ddde31206.js" crossorigin="anonymous"></script>
-      <script src="./public/js/script.js"></script>
-      
-      <!--Animate On Scroll Library-->
-      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-      <script>
-        AOS.init({
-          duration: 2000
-        });
-      </script>
-  </body>
-</html>
+    <div class="contact-section" data-aos="fade-right">
+      <div class="contact-headings">
+        <h2>Keep in touch</h2>
+      </div>
+      <div class="container-contac"></div> -->
+  <!-- </div> -->
+  <script src="https://kit.fontawesome.com/7ddde31206.js" crossorigin="anonymous"></script>
+  <script src="/public/js/script.js"></script>
 
+  <!--Animate On Scroll Library-->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 2000
+    });
+  </script>
+</body>
+
+</html>
